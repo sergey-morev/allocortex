@@ -108,7 +108,7 @@ Advanced, optional migration tools: [Historical chat extractor](docs/advanced/HI
 
 ## License and repository
 
-**Repository:** `external-project-state`.
+**Repository:** `allocortex`.
 
 The original Allocortex documentation and templates in this package are offered under the [MIT License](LICENSE). External websites, referenced projects, and third-party material retain their own licenses; the MIT grant does not override those rights.
 
