@@ -17,22 +17,16 @@ The intended first step is a **short guided conversation in that chat**: the ass
 
 See [First run: chat-native guided setup](docs/FIRST_RUN.md) for the procedure, including setup from an existing context-rich conversation. Nothing extra needs to be installed. If your AI cannot read this link or starts summarizing instead of helping you set up, ask it to read `docs/FIRST_RUN.md` or paste that guide into the chat. **URL-only setup is a design target, not a guaranteed behavior across AI platforms.**
 
-## Where this helps
+## Who is this for?
 
-These fictional situations illustrate the same coordination problem:
+You don't need to be a programmer. If you work on something with AI over days, weeks or months, the challenge is often **knowing what is still true**, not saving every conversation.
 
-- **Research and manuscripts:** A researcher has an accepted analysis plan, but
-  an outdated manuscript draft describes an earlier method. A new collaborator
-  needs to find the accepted plan, identify superseded text, and keep suggested
-  changes separate from approved decisions.
-- **Solo founders building with AI:** A founder uses AI across a storefront,
-  customer records, and operational tasks. A rejected feature returns in a new
-  chat; the next session needs the current scope and the repository or business
-  source that controls each fact.
-- **Software maintenance with multiple agents:** A maintainer coordinates
-  several agents working across issues and branches. One agent follows a
-  superseded approach; contributors need the current decision, task ownership,
-  and relevant commit before proposing an update or duplicating work.
+These examples are fictional illustrations, not measured results:
+
+- **Everyday projects:** You and your AI plan a family trip across several chats. Some hotels were considered, one was booked, and a museum was disappointing. A later chat should recover the actual choices and your preferences, not mistake every suggestion for a visit or reservation.
+- **Solo builders and small businesses:** You discuss features, costs and operations with AI. An idea you rejected last month should not quietly return as an approved plan.
+- **Researchers and writers:** Your manuscript, evidence and analysis plan change. A new assistant should be able to find the accepted methodology and distinguish open questions from verified references.
+- **Developers, CS/ML teams and coding agents:** Your repository, issues and existing status files remain the source of truth. Agents should use current code and accepted design decisions rather than treating an old chat as a specification. No parallel project-management tree is required.
 
 Allocortex offers a small control contract: record the current goal and
 next step, point to the relevant authoritative source, separate approved
@@ -77,9 +71,11 @@ A small existing repository might satisfy every function using only `README.md`,
 
 ## Why not just use Project Sources?
 
-ChatGPT Projects, Claude Projects, knowledge attachments and similar features are useful ways to **provide context**. Allocortex does not replace them or claim better retrieval. It adds a **project-owned operating contract**: one recognized current state, explicit decision authority, provenance and uncertainty, task-specific source routing, and rules for verified, authorized write-back (including deliberate NO-OP). This is helpful when files, people, decisions and AI tools change over time.
+Project files, attached knowledge and platform memory are valuable: they help an assistant **find and read information**. But access to a document does not by itself say whether its plan was accepted, its facts are still current, or the assistant is permitted to change it. Allocortex complements those features with a **project-owned operating contract**: one recognized current state, accepted decisions, source authority, provenance, explicit unknowns and compare-before-write rules.
 
-The same durable records can be **reused across AI products** when the user can access them and the receiving assistant can read them. That is portability of project structure, **not** guaranteed cross-platform tool compatibility, automatic synchronization or superior accuracy. If your existing project already covers these functions, keep it and add nothing.
+**A living project, not just a stored snapshot.** Conversations can be truncated, summarized or left behind as work moves to a new chat. With Allocortex, a person or an authorized AI assistant can check the relevant authoritative source, update the project's durable current state when a meaningful decision or verified fact changes, and read back the result. The next chat can then start from that maintained state. The method also recognizes when **nothing should be written** (NO-OP). This is *governed, agent-assisted maintenance*, **not automatic synchronization or a guarantee of freshness**. Platform Project Sources can themselves point to live changing files; the difference here is the explicit practice for deciding **what is current, what may change, and how a change is verified**.
+
+**Portable by design, conditional in practice.** The same user-controlled documents can be reused with ChatGPT, Claude, coding agents or another assistant when that assistant actually has access to the store. The storage choice and model can change without requiring a new project truth. This does not guarantee that a bare GitHub URL triggers setup, that every model supports connectors or write access, or that Allocortex is more accurate than a well-maintained existing project. If your README, project instructions and current files already cover these functions, **reuse them; don't create duplicate records**.
 
 ## A two-minute example
 
