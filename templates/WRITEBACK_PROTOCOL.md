@@ -37,5 +37,11 @@ Do not paste an entire conversation into durable state when one verified sentenc
 ## Fail closed
 If current state or required external authority cannot be checked, do not reconstruct current truth from archive or chat memory.
 
+## After an attempted write: verify the durable result
+
+Read back the actual destination through an available tool or have the owner verify it. Check the expected file/object identity, location, accepted content and version/revision when supported. Record what was observed separately from what was merely requested.
+
+If the write succeeded but readback or destination verification is unavailable, state `WRITEBACK_UNVERIFIED`; do **not** report an accepted durable update as confirmed. If no write is justified, return an explicit `NO-OP` and name the reason.
+
 ## End-of-session check
 A productive discussion with no state/evidence/decision delta requires no durable write.
