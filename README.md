@@ -47,6 +47,21 @@ Before acting, a project should be able to answer:
 
 Allocortex is a lightweight, storage-agnostic method for answering these questions outside any single chat. It supports **recovery and ongoing work**: a fresh contributor can find the state, and a current contributor can propose a change without silently upgrading chat speculation into durable truth.
 
+## How a long-running project stays usable
+
+Allocortex addresses **six connected problems**, not just the risk of using an old document. Each capability is a documented operating practice; none is an automatic agent service.
+
+1. **Continuity across sessions, people and tools.** A project may outlive a chat, a collaborator or the model being used. A durable recovery entry and current-state pointer let the next authorized person or assistant resume from project-owned records.
+2. **Bounded context and state drift.** Long histories may be summarized, truncated or unavailable in the active conversation. Mark current facts, stale material and unresolved questions explicitly instead of assuming the model has the whole history.
+3. **External project history.** Preserve decision rationale, lessons, previous attempts and relevant source pointers outside transient chats. Reconcile accessible old material as historical evidence; never automatically promote old suggestions into current truth.
+4. **Living plans and work journals.** Track what is planned, underway, completed or blocked, and update the authoritative LIVE status when meaningful work changes. For growing teams, a dated work register or journal can record decisions, results and next steps without turning LIVE into an entire transcript. These are optional functions, not required extra files.
+5. **Authority, provenance and controlled updates.** Separate owner-approved decisions from proposals, identify the actual system of record, compare before writing, and verify the saved change by reading it back. A justified **NO-OP** is also an outcome.
+6. **Minimum relevant context and conditional portability.** Route a task to the smallest set of authoritative records rather than loading every past chat. Those records can be reused with another model or platform **only where that assistant can actually access and use them**; the method does not synchronize systems or enforce compliance on its own.
+
+**Illustrative research workflow:** a team finishes a literature-screening task, records the result and unresolved citations in its existing work log, and updates LIVE with the next permissible step. A different researcher later opens the project's recovery entry, checks LIVE and follows the source Router to the accepted study protocol. If a protocol change is approved, an authorized assistant can record the supported delta and read it back. This is a proposed workflow, **not evidence of proven clinical or cross-platform reliability**.
+
+See [Library Operations](docs/LIBRARY_OPERATIONS.md) for optional work registers, journals, maintenance triggers and handoffs, and [Core Specification](CORE_SPEC.md) for the underlying authority contract.
+
 ## START HERE
 
 **Already have project files?** Do not copy another project-management tree. Map the functions below to your existing README, STATUS, decision log, repository, or workspace; add only the missing source-routing and write-back rules. Start with [Adopting Allocortex](docs/ADOPTING_EXTERNAL_SYSTEM.md).
