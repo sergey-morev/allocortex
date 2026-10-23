@@ -9,6 +9,14 @@ decision authority, source routes, and write-back rules in durable project files
 
 Imagine a project spread across 40 chats. Two weeks ago its owner moved a deadline; today a fresh assistant confidently follows an older plan. The problem is not missing text: it is that the assistant cannot distinguish the current decision from a readable but superseded one. Allocortex makes the current state, decision authority, source routes, and rules for changing them explicit in durable project files.
 
+## Start in your AI chat
+
+**Share this repository link in your existing AI chat:** `https://github.com/sergey-morev/allocortex`
+
+The intended first step is a **short guided conversation in that chat**: the assistant checks what it already knows about your project, then asks only for missing essentials (purpose/name, new or existing work, earlier chats/files, and where to keep durable state). It should reuse existing documents, offer old-chat recovery now or later, and ask before unapproved file changes. **Allocortex is the method, not your project's name.**
+
+See [First run: chat-native guided setup](docs/FIRST_RUN.md) for the procedure, including setup from an existing context-rich conversation. Nothing extra needs to be installed. If your AI cannot read this link or starts summarizing instead of helping you set up, ask it to read `docs/FIRST_RUN.md` or paste that guide into the chat. **URL-only setup is a design target, not a guaranteed behavior across AI platforms.**
+
 ## Where this helps
 
 These fictional situations illustrate the same coordination problem:
@@ -66,6 +74,12 @@ Allocortex is a lightweight, storage-agnostic method for answering these questio
 If your existing README + STATUS + DECISIONS already preserves owner authority, source verification, proposal boundaries and minimal justified updates, you may not need to add anything. Adopt only a missing control that fixes a recurring failure.
 
 A small existing repository might satisfy every function using only `README.md`, `STATUS.md`, `DECISIONS.md`, Git and Issues. A more complex project might use five files or additional evidence, archive and index layers. **The method does not prescribe a file count, directory tree, storage provider, agent, or plugin.**
+
+## Why not just use Project Sources?
+
+ChatGPT Projects, Claude Projects, knowledge attachments and similar features are useful ways to **provide context**. Allocortex does not replace them or claim better retrieval. It adds a **project-owned operating contract**: one recognized current state, explicit decision authority, provenance and uncertainty, task-specific source routing, and rules for verified, authorized write-back (including deliberate NO-OP). This is helpful when files, people, decisions and AI tools change over time.
+
+The same durable records can be **reused across AI products** when the user can access them and the receiving assistant can read them. That is portability of project structure, **not** guaranteed cross-platform tool compatibility, automatic synchronization or superior accuracy. If your existing project already covers these functions, keep it and add nothing.
 
 ## A two-minute example
 
