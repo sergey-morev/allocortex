@@ -17,6 +17,12 @@
 
 
 
+## First-time entry from an AI chat
+
+The recommended entry is to share the Allocortex repository URL **within the AI chat already in use**. Follow [First run — chat-native guided setup](FIRST_RUN.md): inspect the actually available conversation/project context, ask only for unresolved details, inventory prior chats and existing files, and reuse rather than duplicate existing authority. An existing chat may need **zero** questions; a new chat may start with a single question about purpose. Offer history recovery now or later. The consumer project's name is not `Allocortex`.
+
+Keep onboarding in-chat. Platform-native choices are optional; brief text questions work where rich widgets do not exist. No separate onboarding website or compulsory Project Source is required. A bare URL does not reliably trigger setup on all products; disclose a failed repository read and let the user provide the guide. Before durable writes, establish target and authority; verify saved files with readback. See the full first-run contract for the branches and failure cases.
+
 ## Choose an adoption path (START HERE)
 
 
