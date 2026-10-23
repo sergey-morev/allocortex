@@ -85,7 +85,8 @@ Chat/model output is candidate delta, not durable truth. Before writing:
 4. compare with existing durable state;
 5. verify support;
 6. select the correct destination;
-7. write the smallest justified consequence.
+7. write the smallest justified consequence;
+8. **read back the actual saved destination** and confirm the expected content, location and, where available, revision/ID. If that cannot be checked, report the durable update as `UNVERIFIED` rather than successful.
 
 
 
@@ -113,6 +114,14 @@ The newest source is not necessarily authoritative, and an accepted decision is 
 
 
 
+
+## 13. Living work state and optional planning/journals
+
+Project continuity concerns **work in progress**, not just accepted decisions. The authoritative LIVE surface records current phase, blockers and the next permitted action; it is updated when a meaningful state transition occurs.
+
+When parallel tasks or material events make LIVE insufficient, reuse an existing Issue tracker, project plan or work register for planned/in-progress/completed/blocked work, owners, dependencies and next gates. A lightweight dated journal may preserve consequential results, failed attempts, lessons and exact artifact pointers. **Neither is a mandatory additional file.** Keep large chronological history out of the small LIVE entry, and route to the log only when the task requires it.
+
+When work changes, classify whether the result updates work tracking, LIVE, an accepted decision, a source pointer or none of these. Apply the authorized compare-before-write rule and verify saved changes where tools allow; do not mistake an assistant's assertion for completed work.
 
 ## Implement the functions, not a fixed file tree
 

@@ -19,4 +19,6 @@ Rules:
 - already represented -> `NO-OP`;
 - unsupported -> do not promote.
 
+After an authorized durable update, read back the actual saved record, confirm the correct destination and content, and retain a minimal verification receipt. If the destination cannot be checked, report `WRITEBACK_UNVERIFIED` instead of asserting success. A NO-OP requires no write receipt.
+
 If current state or required external authority cannot be checked, fail closed.
