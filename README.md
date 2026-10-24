@@ -15,7 +15,7 @@ Imagine a project spread across 40 chats. Two weeks ago its owner moved a deadli
 
 The intended first step is a **short guided conversation in that chat**: the assistant checks what it already knows about your project, then asks only for missing essentials (purpose/name, new or existing work, earlier chats/files, and where to keep durable state). It should reuse existing documents, offer old-chat recovery now or later, and ask before unapproved file changes. **Allocortex is the method, not your project's name.**
 
-See [First run: chat-native guided setup](docs/FIRST_RUN.md) for the procedure, including setup from an existing context-rich conversation. Nothing extra needs to be installed. If your AI cannot read this link or starts summarizing instead of helping you set up, ask it to read `docs/FIRST_RUN.md` or paste that guide into the chat. **URL-only setup is a design target, not a guaranteed behavior across AI platforms.**
+See [First run: chat-native guided setup](docs/FIRST_RUN.md) for the procedure, including setup from an existing context-rich conversation. **Allocortex itself requires no installation.** If you choose Google Drive, you may need to connect Drive to your AI tool and grant the necessary access; the GitHub link cannot connect your account for you. If your AI cannot read this link or starts summarizing instead of helping you set up, ask it to read `docs/FIRST_RUN.md` or paste that guide into the chat. **URL-only setup is a design target, not a guaranteed behavior across AI platforms.**
 
 ## Who is this for?
 
@@ -46,6 +46,19 @@ Before acting, a project should be able to answer:
 - What may be written back durably, and what should remain a NO-OP?
 
 Allocortex is a lightweight, storage-agnostic method for answering these questions outside any single chat. It supports **recovery and ongoing work**: a fresh contributor can find the state, and a current contributor can propose a change without silently upgrading chat speculation into durable truth.
+
+## What does this look like in everyday use?
+
+**One family trip, several AI chats.** You plan a trip in one conversation, then return in a new chat. Instead of retelling everything, you point the new assistant to your project's current records: where you plan to stay, what was actually booked, family food preferences, what you visited, and what is still undecided. After an important change, an assistant **with access and your authorization** can update those records and verify what was saved. The next chat has a useful starting point **if it opens the current files**.
+
+The same pattern can help a small business track decisions, a student continue a study plan, or researchers hand over an unfinished review. **Already have many old chats?** Work with the conversations and files you can actually access: ask each relevant old chat for a candidate recovery note, then have one authorized project owner or coordinator reconcile those notes against current decisions before updating shared records. Do not let every old chat overwrite the current state independently. One project can be enough. For a one-off question—or an existing workflow that already maintains clear current status—you may not need this method.
+
+### Google Drive, other AI tools, and privacy
+
+- **Do I need Google Drive?** No. It is an optional durable store. You can use existing repository files, another connected document store, or a folder you maintain yourself. If you want an AI assistant to read or update Drive, first check whether that platform offers a Drive connection and grant the appropriate permissions. A connection alone does not authorize edits.
+- **Will ChatGPT and Claude know what each other did?** Not automatically. Different assistants may **work from the same maintained documents** when each has actual access and opens the relevant files. They do not thereby gain access to each other's private conversations or synchronize background activity.
+- **Will documents update themselves?** No. A person or authorized assistant must recognize a meaningful change, verify the source, update the appropriate record, and read it back. If no write-capable connection exists, the assistant can prepare text for you to save manually; it must not claim a successful update.
+- **Is my information private?** Your project records are not published merely because Allocortex's repository is public. Their access depends on your storage sharing settings and connected AI tools. **It is not accurate to say data never leaves Google Drive:** information you give an AI assistant or allow it to retrieve is processed by that service under its own terms and settings. Review permissions, use the least access needed, and avoid placing passwords, identifiable patient data or other sensitive information in broadly shared records.
 
 ## How a long-running project stays usable
 
