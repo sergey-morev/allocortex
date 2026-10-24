@@ -51,7 +51,7 @@ Allocortex is a lightweight, storage-agnostic method for answering these questio
 
 **One family trip, several AI chats.** You plan a trip in one conversation, then return in a new chat. Instead of retelling everything, you point the new assistant to your project's current records: where you plan to stay, what was actually booked, family food preferences, what you visited, and what is still undecided. After an important change, an assistant **with access and your authorization** can update those records and verify what was saved. The next chat has a useful starting point **if it opens the current files**.
 
-The same pattern can help a small business track decisions, a student continue a study plan, or researchers hand over an unfinished review. One project can be enough. For a one-off question—or an existing workflow that already maintains clear current status—you may not need this method.
+The same pattern can help a small business track decisions, a student continue a study plan, or researchers hand over an unfinished review. **Already have many old chats?** Work with the conversations and files you can actually access: ask each relevant old chat for a candidate recovery note, then have one authorized project owner or coordinator reconcile those notes against current decisions before updating shared records. Do not let every old chat overwrite the current state independently. One project can be enough. For a one-off question—or an existing workflow that already maintains clear current status—you may not need this method.
 
 ### Google Drive, other AI tools, and privacy
 
